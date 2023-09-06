@@ -1,203 +1,62 @@
 * {
+    margin: 0;
+    padding: 0;
     font-family: 'Noto Sans KR', sans-serif;
-    list-style: none;
+    list-style-type: none;
     text-decoration: none;
-    border-collapse: collapse;
-    margin: 0px;
-    padding: 0px;
-    color: rgb(0, 0, 0);
 }
-/* intro */
-h1 {
-    font-size: 48px;
-    font-weight: 100;
-}
-.contents1 {
-    font-size: 20px;
-    font-weight: lighter;
-}
-.contents2 {
-    font-size: 14px;
-    font-weight: 100;
-}
-.contents1_bold {
-    font-size: 18px;
-    font-weight: bold;
-}
-.result {
-    font-size: 24px;
-}
-.intro_bg {
-    background-image: url("image/intro.png");
-    width: 100%;
-    height: 718px;
-}
-.header {
-    display: flex;
-    width: 1280px;
-    height: 86px;
-    margin: auto;
-}
-.searchArea {
-    width: 300px;
-    height: 40px;
-    border-radius: 5px;
-    margin-top: 24px;
-}
-.searchArea > form > input {
-    border: none;
-    width: 250px;
-    height: 40px;
-    background: rgba(0, 0, 0, 0.5);
-    color: rgb(255, 255, 255);
-    padding-left: 10px;
-}
-.searchArea > form > span {
-    width: 50px;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    cursor: pointer;
-}
-.nav {
-    display: flex;
-    justify-content: flex-end;
-    line-height: 86px;
-    width: calc(1280px - 300px);
-}
-.nav > li {
-    margin-left: 84px;
-}
-.nav > li > a {
-    color: white;
-}   
-.intro_text {
+/* first-screen */
+.first-screen {
+    width: 100vw;
+    height: 80vh;
     text-align: center;
-    margin: 231px auto 231px auto;
 }
-.intro_text > h1,
-.intro_text > h4 {
-    color: rgb(255, 255, 255);
+
+.first-screen > img {
+    margin-top: 5vh;
+    height: 30vh;
 }
-/* amount */
-.amount {
-    width: 1280px;
-    display: flex;
-    margin: auto;
+
+.first-screen > p:first-of-type {
     position: relative;
-    top: -66px;
-    background: white;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    top: -21vh;
+    font-size: 4vh;
+    color: rgb(226, 241, 183);
+    margin-bottom: 10vh;
 }
-.amount > li {
-    flex: 1;
-    height: 132px;
-}
-.amount > li > div {
+/* second-screen */
+.second-screen {
+    width: 100vw;
+    height: 50vh;
     text-align: center;
-    height: 57px;
-    margin-top: 37px;
+    background-color: rgba(169, 169, 169, 0.136);
 }
-.amount > li:not(:last-child) > div { /* amount 아래 마지막 li의 div만 제외하고 적용한다 */
-    border-right: 1px solid lightgray;
+
+.second-screen > h2 {
+    padding: 10vh;
+    letter-spacing: 1vw;
 }
-/* main_text0 */
-.main_text0 {
-    width: 100%;
-    height: 601px;
-    margin-top: -132px;
-    background: #f1f2f3;
+/* third-screen */
+.third-screen {
+    width: 100vw;
+    height: 80vh;
 }
-.main_text0 > h1 {
-    text-align: center;
-    padding-top: 116px;
+
+.contact_couple {
+    margin: 5vh 10vw;
 }
-.main_text0 > .contents1 {
-    text-align: center;
-}
-.icons {
-    width: 1280px;
-    height: 302px;
+
+.contact_couple > ul {
     display: flex;
-    margin: auto;
+    margin-top: 8vh;
 }
-.icons > li {
-    height: 302px;
+
+.contact_couple > ul > li:first-of-type {
+    font-size: 25px;
+    flex: 4;
+}
+
+.contact_couple > ul > li {
+    font-size: 25px;
     flex: 1;
-    background: white;
-    margin-top: 49px;
-    text-align: center;
-}
-.icons > li:not(:last-child) {
-    margin-right: 20px;
-}
-.icon_img {
-    height: 240px;
-    margin-top: 18px;
-}
-.icons .contents2 {
-    width: 290px;
-    margin: auto;
-}
-.more {
-    width: 100px;
-    height: 30px;
-    line-height: 30px;
-    background: #2f7af4;
-    color: white;
-    font-size: 12px;
-    margin: 25px auto;
-}
-/* main_text_1 */
-.main_text1 {
-    width: 100%;
-    height: 659px;
-}
-.main_text1 > h1 {
-    text-align: center;
-    margin-top: 50px;
-}
-.main_text1 > .contents1 {
-    text-align: center;
-}
-.service {
-    width: 1280px;
-    height: 427px;
-    margin: 49px auto;
-    display: flex;
-}
-.service > .contents2 {
-    padding: 20px;
-}
-.service > .contents2 > h2 {
-    margin-bottom: 27px;
-}
-/* main_text_2 */
-.main_text2 {
-    width: 100%;
-    height: 418px;
-    background-image: url(image/contact.png);
-    display: flex;
-}
-.left {
-    flex: 1;
-    text-align: center;
-}
-.right {
-    flex: 1;
-}
-.left > h1 {
-    text-align: center;
-    color: white;
-    margin: 140px auto 0px;
-}
-.left > .contents1 {
-    text-align: center;
-    color: white;
-}
-.more2 {
-    margin-top: 30px;
-    border: 1px solid white;
-    color: white;
-    width: 250px;
-    margin: 40px auto;
 }
