@@ -27,7 +27,7 @@
 /* second-screen */
 .second-screen {
     width: 100vw;
-    height: 50vh;
+    height: 90vh;
     text-align: center;
     background-color: rgba(169, 169, 169, 0.136);
 }
@@ -36,27 +36,99 @@
     padding: 10vh;
     letter-spacing: 1vw;
 }
-/* third-screen */
-.third-screen {
-    width: 100vw;
-    height: 80vh;
+
+.second-screen > h3:first-of-type {
+    margin-top: 10vh;
+}
+
+.second-screen > h3 {
+    margin-top: 5vh;
 }
 
 .contact_couple {
-    margin: 5vh 10vw;
+    margin: 1vh 20vw;
 }
 
 .contact_couple > ul {
     display: flex;
-    margin-top: 8vh;
+    /* margin-top: 8vh; */
 }
 
 .contact_couple > ul > li:first-of-type {
-    font-size: 25px;
+    font-size: 13px;
     flex: 4;
 }
 
 .contact_couple > ul > li {
-    font-size: 25px;
+    font-size: 13px;
     flex: 1;
+}
+
+/* third-screen */
+.third-screen {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+
+.third-screen > h2 {
+    padding: 10vh;
+    letter-spacing: 1vw;
+}
+
+.third-screen > img {
+    width: 300px;
+    height: 400px;
+}
+
+/* fourth-screen */
+.fourth-screen {
+    width: 100vw;
+    height: 90vh;
+    text-align: center;
+    background-color: rgba(169, 169, 169, 0.136);
+}
+
+.fourth-screen > h2 {
+    padding: 10vh;
+    letter-spacing: 1vw;
+}
+
+/* fifth-screen */
+.fifth-screen {
+    width: 100vw;
+    height: 55vh;
+    text-align: center;
+}
+
+.fifth-screen > h2 {
+    padding: 10vh;
+    letter-spacing: 1vw;
+}
+
+/* sixth-screen */
+.sixth-screen {
+    width: 100vw;
+    height: 90vh;
+    text-align: center;
+    background-color: rgba(169, 169, 169, 0.136);
+}
+
+.sixth-screen > h2 {
+    padding: 10vh;
+    letter-spacing: 1vw;
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: lightcoral;
+}
+
+th, td {
+    border: solid 1px pink;
+    padding: 10px;
 }
