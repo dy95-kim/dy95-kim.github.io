@@ -84,6 +84,10 @@ export function FoodFormModal({
       nextErrors.location = '보관 위치를 선택해 주세요.';
     }
 
+    if (!isValidDateInput(values.createdAt.trim())) {
+      nextErrors.createdAt = '등록일은 yyyy-mm-dd 형식의 올바른 날짜여야 합니다.';
+    }
+
     if (values.expiresAt && !isValidDateInput(values.expiresAt)) {
       nextErrors.expiresAt = '유통기한은 yyyy-mm-dd 형식의 올바른 날짜여야 합니다.';
     }
@@ -102,6 +106,7 @@ export function FoodFormModal({
     onSubmit({
       ...values,
       name: values.name.trim(),
+      createdAt: values.createdAt.trim(),
       expiresAt: values.expiresAt.trim(),
       quantity: values.quantity.trim(),
       memo: values.memo.trim(),
@@ -191,11 +196,14 @@ export function FoodFormModal({
                 등록일
               </span>
               <input
+                type="date"
                 value={values.createdAt}
-                readOnly
-                disabled
-                className="h-12 w-full rounded-2xl border border-slate-200 bg-slate-100 px-4 text-sm text-slate-500"
+                onChange={(event) => updateField('createdAt', event.target.value)}
+                className="h-12 w-full rounded-2xl border border-slate-200 bg-white px-4 text-sm text-ink outline-none transition focus:border-fridge focus:ring-4 focus:ring-fridge/10"
               />
+              {errors.createdAt ? (
+                <p className="mt-2 text-xs text-rose-600">{errors.createdAt}</p>
+              ) : null}
             </label>
 
             <label>

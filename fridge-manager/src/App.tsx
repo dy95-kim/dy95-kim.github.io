@@ -83,7 +83,7 @@ export default function App() {
     const normalizedItem = {
       name: values.name.trim(),
       location: values.location,
-      createdAt: editingItem?.createdAt ?? values.createdAt,
+      createdAt: values.createdAt,
       expiresAt: values.expiresAt || undefined,
       quantity: values.quantity || undefined,
       memo: values.memo || undefined,
@@ -115,8 +115,8 @@ export default function App() {
                   냉장실과 냉동실의 식재료를 한눈에 관리하세요.
                 </h1>
                 <p className="max-w-xl text-sm leading-6 text-slate-600 sm:text-base">
-                  등록일은 자동으로 기록하고, 유통기한이 지난 음식과 3일
-                  이하로 남은 음식을 바로 구분해 보여줍니다.
+                  등록일은 오늘 날짜로 기본 입력하고, 유통기한이 지난 음식과
+                  3일 이하로 남은 음식을 바로 구분해 보여줍니다.
                 </p>
               </div>
             </div>

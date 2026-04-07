@@ -25,7 +25,7 @@
 
 ## UI Behavior
 - The main screen is responsive and keeps fridge/freezer sections side by side on large screens, stacked on smaller screens.
-- The form keeps `createdAt` read-only and auto-filled with the current date in `yyyy-mm-dd` format.
+- The form auto-fills `createdAt` with the current date in `yyyy-mm-dd` format and allows users to adjust it.
 - Card status presentation is derived from `expiresAt`:
   - `expired`: expiry date is before today.
   - `warning`: 0 to 3 days remaining.
